@@ -42,11 +42,17 @@
         </table>
         <h2>Book Now</h2>
         <label >Name: </label>
-        <input type="text" name="name" /><br><br>
+        <input type="text" name="name" id="name" /><br><br>
         <label >Email: </label>
-        <input type="email" name="email" /><br><br>
+        <input type="email" name="email" id="email"/><br><br>
         <label >Place: </label>
-        <input type="text" name="place" /><br><br>
-        <input type="submit" name="Submit" onclick="alert('Booking submitted!')"/>
+        <input type="text" name="place" id="place"/><br><br>
+        <input type="submit" name="Submit" onclick="{
+            var name=document.getElementById('name').value;
+            var email= document.getElementById('email').value;
+            var place=document.getElementById('place').value;
+            if (name!=''&&email!=''&&place!='')
+            alert('Booking submitted!');
+            else alert('Fill the complete details')}"/>
 </body>
 </html>
