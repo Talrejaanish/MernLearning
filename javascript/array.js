@@ -1,0 +1,11 @@
+let array=[1,2,true,3,"Anish"];
+console.log("Initial Array:",array);
+array.push(4);
+console.log("Array after push:",array);
+console.log("Array length:",array.length);
+array.pop();
+console.log("Array after pop:",array);
+console.log("Element at index 2:",array[2]);
+let marks=[90,80,70,60,50];
+marks.sort();
+console.log("Sorted Marks:",marks);
