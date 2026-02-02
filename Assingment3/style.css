@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.color-options {
+   text-align: center;
+    background-color: lightsteelblue;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 12px;
+    margin: auto;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    line-height: 100px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.color-item input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.color-item label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+#nameInput {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 200px;
+}
+
+#nameInput::placeholder {
+    color: #999;
+}
+
+#greetBtn {
+    padding: 8px 20px;
+    font-size: 14px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#greetBtn:hover {
+    background-color: #bbb;
+}
