@@ -16,6 +16,6 @@ function App() {
       <Profile/>
     </UserContextProvider>
   )
-}
+} 
 
 export default App
